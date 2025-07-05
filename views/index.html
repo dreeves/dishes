@@ -1,0 +1,58 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>d3</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.glitch.com/3c328f30-b467-4709-b231-7d262ee265f8%2Fapple-touch-icon.png?v=1598736544578">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/3c328f30-b467-4709-b231-7d262ee265f8%2Ffavicon-32x32.png?v=1598736544053">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/3c328f30-b467-4709-b231-7d262ee265f8%2Ffavicon-16x16.png?v=1598736544387">
+    <link rel="manifest" href="https://cdn.glitch.com/3c328f30-b467-4709-b231-7d262ee265f8%2Fsite.webmanifest?v=1598736544236">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-md-auto">
+          <div class="title">
+            {{today}}
+          </div>
+          <div class="title">
+            Who's doing the dishes:
+          </div>
+          <div class="person">
+            {{name}}
+          </div>
+          <div class="link">
+            <a href="history">View History</a>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="public/client.js"></script>
+
+  </body>
+</html>

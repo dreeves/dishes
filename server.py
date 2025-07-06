@@ -18,7 +18,10 @@ import pytz
 from datetime import datetime, timedelta
 
 # Support for gomix's 'front-end' and 'back-end' UI.
-app = Flask(__name__, static_folder='public', template_folder='views')
+app = Flask(__name__, 
+            static_folder='public', 
+            static_url_path='/public', # o3 said to add this
+            template_folder='views')
 
 # Set the app secret key from the secret environment variables.
 app.secret = os.environ.get('SECRET')
